@@ -7,7 +7,7 @@ namespace ASP_Dapper.Controllers
    
         [ApiController]
         [Route("[controller]")]
-        public class NoteController : ControllerBase
+        public class NoteController : Controller
         {
             [HttpGet("AllNotes")]
             public async Task<ActionResult<List<Note>>> AllNotes()
